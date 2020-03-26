@@ -1,16 +1,15 @@
 import React from 'react';
+import { Button, HireMe } from './Button.js';
+import Close from '../images/close-popup.png';
 import styled from 'styled-components';
+import Colors from '../Colors';
+import * as Mixins from '../Mixins';
+import { media, mediaMin } from '../MediaQueries';
 import { withTheme } from 'styled-components';
+import * as t from '../Typography';
 import { lighten, darken } from 'polished';
 import Helmet from 'react-helmet';
-
-import { Button, HireMe } from './Button.js';
-import { media, mediaMin } from '../MediaQueries';
-import Close from '../images/close-popup.png';
-import Colors from '../Colors';
-import Avatar from '../images/avatar.png'
-import * as Mixins from '../Mixins';
-import * as t from '../Typography';
+import Avatar from '../images/avatar.jpg'
 
 const HeaderWrapper = styled.div`
   height: auto;
