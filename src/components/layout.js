@@ -9,12 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
-import Footer from './Footer'
 
-import Header from "./header"
-import "./layout.css"
-import * as Mixins from '../Mixins'
+import Footer from './Footer'
+import Header from "./Header"
 import GlobalStyles from '../GlobalStyles'
+import * as Mixins from '../Mixins'
+
+import "./layout.css"
 
 export const Content = styled.div`
   ${Mixins.contentMixin}
@@ -38,7 +39,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyles/>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <LayoutWrapper>{children}</LayoutWrapper>
       <Footer/>
     </>
