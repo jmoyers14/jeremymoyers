@@ -5,6 +5,8 @@ import Placeholder from '../images/placeholder.png';
 import SpecialtyProduce from '../images/SpecialtyProduce.jpg'
 import Trace from '../images/Trace.jpg'
 import Avagen from '../images/Avagen.jpg'
+import Bump from '../images/Bump.jpg'
+import Buffini from '../images/Buffini.jpg'
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
@@ -154,21 +156,15 @@ class Homepage extends React.Component {
               {S.FULL_NAME}
             </t.H1>
             <t.LargeP align="center" max45>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              {S.SHORT_BIO}
             </t.LargeP>
             <HireMe large onClick={this.openContactPopup} book>
-              Hire me
+              {S.CONTACT_BUTTON}
             </HireMe>
           </AboveFold>
           <Content>
-            <t.H2 primary align="center" bold>
-              Lorem ipsum
-            </t.H2>
-            <t.P align="center" max70 className="who-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </t.P>
             <t.H2 primary align="center" bold className="portfolio">
-              Portfolio
+              {S.PORTFOLIO_LABEL}
             </t.H2>
           </Content>
           <Block>
@@ -192,8 +188,8 @@ class Homepage extends React.Component {
             <BlockContent>
               <DivWrapper>
                 <t.H2 bold>{S.SP_TITLE}</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
+                <t.P>{S.SP_TECHNOLOGY}</t.P>
+                <t.P>{S.SP_DESCRIPTION}</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
                   href="#">
@@ -212,8 +208,8 @@ class Homepage extends React.Component {
               </DivWrapper>
               <DivWrapper>
                 <t.H2 bold>{S.AVAGEN_TITLE}</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
+                <t.P>{S.AVAGEN_TECHNOLOGY}</t.P>
+                <t.P>{S.AVAGEN_DESCRIPTION}</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
                   href="#">
@@ -225,9 +221,9 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
+                <t.H2 bold>{S.BUMP_TITLE}</t.H2>
+                <t.P>{S.BUMP_TECHNOLOGY}</t.P>
+                <t.P>{S.BUMP_DESCRIPTION}</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
                   href="#">
@@ -235,7 +231,24 @@ class Homepage extends React.Component {
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Bump} alt="Bump title" />
+              </DivWrapper>
+            </BlockContent>
+          </Block>
+          <Block>
+            <BlockContent>
+              <DivWrapper>
+                <ItemImage src={Buffini} alt="Buffini title" />
+              </DivWrapper>
+              <DivWrapper>
+                <t.H2 bold>{S.BUFFINI_TITLE}</t.H2>
+                <t.P>{S.BUFFINI_TECHNOLOGY}</t.P>
+                <t.P>{S.BUFFINI_DESCRIPTION}</t.P>
+                <LinkButton primary bold className="link" as="a"
+                  target="_blank"
+                  href="#">
+                  Lorem ipsum
+                </LinkButton>
               </DivWrapper>
             </BlockContent>
           </Block>
