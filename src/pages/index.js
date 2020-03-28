@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as Mixins from '../Mixins';
-import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
 import Placeholder from '../images/placeholder.png';
+import SpecialtyProduce from '../images/SpecialtyProduce.jpg'
+import Trace from '../images/Trace.jpg'
+import Avagen from '../images/Avagen.jpg'
 import { HireMe, LinkButton } from '../components/Button.js';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
@@ -11,6 +12,10 @@ import Colors from '../Colors';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { darken } from 'polished';
+
+import * as Mixins from '../Mixins';
+import * as t from '../Typography';
+import * as S from '../Strings'
 
 const AboveFold = styled.div`
   ${Mixins.aboveFoldMixin}
@@ -144,9 +149,9 @@ class Homepage extends React.Component {
       <HomepageWrapper>
         <Layout theme="white" bigFooter openContactPopup={this.openContactPopup}>
           <AboveFold>
-            <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Name Surname" className="avatar" />
+            <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Full Name" className="avatar" />
             <t.H1 primary align="center">
-              Name Surname
+              {S.FULL_NAME}
             </t.H1>
             <t.LargeP align="center" max45>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -169,10 +174,10 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Trace} alt="Trace Title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
+                <t.H2 bold>{S.TRACE_TITLE}</t.H2>
                 <t.P>Lorem ipsum</t.P>
                 <t.P>Dolor sit amet</t.P>
                 <LinkButton primary bold className="link" as="a"
@@ -186,7 +191,7 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
+                <t.H2 bold>{S.SP_TITLE}</t.H2>
                 <t.P>Lorem ipsum</t.P>
                 <t.P>Dolor sit amet</t.P>
                 <LinkButton primary bold className="link" as="a"
@@ -196,17 +201,17 @@ class Homepage extends React.Component {
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={SpecialtyProduce} alt="SpecialtyProduce title" />
               </DivWrapper>
             </BlockContent>
           </Block>
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={Avagen} alt="Avagen title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
+                <t.H2 bold>{S.AVAGEN_TITLE}</t.H2>
                 <t.P>Lorem ipsum</t.P>
                 <t.P>Dolor sit amet</t.P>
                 <LinkButton primary bold className="link" as="a"

@@ -3,13 +3,15 @@ import { Button, HireMe } from './Button.js';
 import Close from '../images/close-popup.png';
 import styled from 'styled-components';
 import Colors from '../Colors';
-import * as Mixins from '../Mixins';
 import { media, mediaMin } from '../MediaQueries';
 import { withTheme } from 'styled-components';
-import * as t from '../Typography';
 import { lighten, darken } from 'polished';
 import Helmet from 'react-helmet';
 import Avatar from '../images/avatar.jpg'
+
+import * as Mixins from '../Mixins';
+import * as t from '../Typography';
+import * as S from '../Strings'
 
 const HeaderWrapper = styled.div`
   height: auto;
@@ -213,7 +215,7 @@ class Header extends React.Component {
         </Helmet>
         <ContentWrapper>
           <Logo href="/">
-            <img src={Avatar} alt="Name Surname" />
+            <img src={Avatar} alt={S.FULL_NAME} />
           </Logo>
           <HeaderNav>
             <Burger alt="Menu" onClick={this.handleBurgerClick} scrolled={scrolled} theme={theme}>
