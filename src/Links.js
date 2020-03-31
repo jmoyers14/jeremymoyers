@@ -1,0 +1,6 @@
+export const SP = 'https://apps.apple.com/us/app/specialty-produce/id398083565'
+export const TRACE = 'https://apps.apple.com/us/app/trace-by-solara/id1467003529'
+export const BUFFINI = 'https://apps.apple.com/us/app/referral-maker-crm/id1097338930'
+export const BUMP = 'https://apps.apple.com/us/app/bump-app/id1353532619'
+export const WELLRX = 'https://apps.apple.com/us/app/scriptsave-wellrx-premier/id1280982045'
+export const ROCKETING = 'https://apps.apple.com/us/app/rocketing-for-instagram/id934568597'

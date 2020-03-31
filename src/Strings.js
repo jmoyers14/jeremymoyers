@@ -8,6 +8,7 @@ export const LONG_BIO = 'A full stack web and mobile developer located in San Di
 
 
 export const CONTACT_BUTTON = 'Contact Me'
+export const APP_STORE_LINK = 'App Store'
 export const PORTFOLIO_LABEL = 'Portfolio'
 
 

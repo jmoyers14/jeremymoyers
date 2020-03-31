@@ -1,23 +1,24 @@
-import React from 'react';
-import styled from 'styled-components';
-import Layout, { Content } from '../components/Layout';
-import Placeholder from '../images/placeholder.png';
+import React from 'react'
+import styled from 'styled-components'
+import Layout, { Content } from '../components/Layout'
+import Placeholder from '../images/placeholder.png'
 import SpecialtyProduce from '../images/SpecialtyProduce.jpg'
 import Trace from '../images/Trace.jpg'
 import Avagen from '../images/Avagen.jpg'
 import Bump from '../images/Bump.jpg'
 import Buffini from '../images/Buffini.jpg'
-import { HireMe, LinkButton } from '../components/Button.js';
-import HireMePopup from '../components/HireMePopup.js';
-import { media } from '../MediaQueries';
-import Colors from '../Colors';
-import Img from 'gatsby-image';
-import { graphql } from 'gatsby';
-import { darken } from 'polished';
+import { HireMe, LinkButton } from '../components/Button.js'
+import HireMePopup from '../components/HireMePopup.js'
+import { media } from '../MediaQueries'
+import Colors from '../Colors'
+import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
+import { darken } from 'polished'
 
-import * as Mixins from '../Mixins';
-import * as t from '../Typography';
+import * as Mixins from '../Mixins'
+import * as t from '../Typography'
 import * as S from '../Strings'
+import * as L from '../Links'
 
 const AboveFold = styled.div`
   ${Mixins.aboveFoldMixin}
@@ -178,8 +179,8 @@ class Homepage extends React.Component {
                 <t.P>{S.TRACE_DESCRIPTION}</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href={L.TRACE}>
+                  {S.APP_STORE_LINK}
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
@@ -192,8 +193,8 @@ class Homepage extends React.Component {
                 <t.P>{S.SP_DESCRIPTION}</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href={L.SP}>
+                  {S.APP_STORE_LINK}
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
@@ -210,11 +211,6 @@ class Homepage extends React.Component {
                 <t.H2 bold>{S.AVAGEN_TITLE}</t.H2>
                 <t.P>{S.AVAGEN_TECHNOLOGY}</t.P>
                 <t.P>{S.AVAGEN_DESCRIPTION}</t.P>
-                <LinkButton primary bold className="link" as="a"
-                  target="_blank"
-                  href="#">
-                  Lorem ipsum
-                </LinkButton>
               </DivWrapper>
             </BlockContent>
           </Block>
@@ -226,8 +222,8 @@ class Homepage extends React.Component {
                 <t.P>{S.BUMP_DESCRIPTION}</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href={L.BUMP}>
+                  {S.APP_STORE_LINK}
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
@@ -246,8 +242,8 @@ class Homepage extends React.Component {
                 <t.P>{S.BUFFINI_DESCRIPTION}</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href={L.BUFFINI}>
+                  {S.APP_STORE_LINK}
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
