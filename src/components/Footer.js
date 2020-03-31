@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Colors from '../Colors';
 import { Content } from './Layout';
 import { media } from '../MediaQueries';
+import * as S from '../Strings'
 
 const FooterWrapper = styled.div`
   background: ${Colors.darkest};
@@ -19,7 +20,7 @@ const Footer = ({ big, medium }) => (
   <FooterWrapper {...big && { big }} {...medium && { medium }}>
     <Content>
       <Copyright white align="center">
-        © Name Surname 2019. All rights reserved.
+        {S.FOOTER_TEXT}
       </Copyright>
     </Content>
   </FooterWrapper>

@@ -4,6 +4,7 @@
 
 export const FULL_NAME = 'Jeremy Moyers'
 export const SHORT_BIO = 'Software Engineer at Seamgen LLC'
+export const LONG_BIO = 'A full stack web and mobile developer located in San Diego California. Interested in startups, investing, craft beer and surfing. 🤙'
 
 
 export const CONTACT_BUTTON = 'Contact Me'
@@ -21,6 +22,8 @@ export const SP_DESCRIPTION = 'A mobile encyclopedia with thousands of produce i
 
 // Trace
 export const TRACE_TITLE = 'Trace'
+export const TRACE_TECHNOLOGY = 'Native Swift'
+export const TRACE_DESCRIPTION = 'TRACE captures the information required for Solara to process Medicare orders to easily provide you with your supplies.'
 
 // Avagen
 export const AVAGEN_TITLE = 'Avagen'
@@ -36,3 +39,8 @@ export const BUMP_DESCRIPTION = 'A social network for sharing experiences and ex
 export const BUFFINI_TITLE = 'Referral Maker CRM'
 export const BUFFINI_TECHNOLOGY = 'Xamarin Native'
 export const BUFFINI_DESCRIPTION = 'Real Estate coaching CRM application to help agents generate consistent and predictable stream of referred and repeat business. Technologies used include Contacts, Core Location, AVFoundation and MapKit.'
+
+/*
+ * Footer
+ */
+export const FOOTER_TEXT = '© Jeremy Moyers 2020. All rights reserved.'
