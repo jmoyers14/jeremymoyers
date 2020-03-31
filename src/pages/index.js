@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Layout, { Content } from '../components/Layout'
+import Layout, { Content } from '../components/Layout.js'
 import Placeholder from '../images/placeholder.png'
 import SpecialtyProduce from '../images/SpecialtyProduce.jpg'
 import Trace from '../images/Trace.jpg'
