@@ -1,0 +1,23 @@
+phases:
+  install:
+    runtime-version:
+      nodejs: 12
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+      - npm install -g gatsby-cli
+  build:
+    commands:
+      - echo Build started on `date`
+      - gatsby build
+  post_build:
+    commands:
+      # remove the contents from mpacam-website bucket
+      - aws s3 rm --recursive s3://jeremy-moyers-website/
+      # copy the contents of /public to S3
+      - aws s3 cp --recursive public s3://jeremy-moyers-website/ 
+artifacts:
+  files:
+    - '**/*'
+  base-directory: public
