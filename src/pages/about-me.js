@@ -1,12 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import * as Mixins from '../Mixins';
-import * as t from '../Typography';
-import Layout, { Content } from '../components/Layout';
-import HireMePopup from '../components/HireMePopup.js';
-import { media } from '../MediaQueries';
-import Img from 'gatsby-image';
-import { graphql } from 'gatsby';
+import React from 'react'
+import styled from 'styled-components'
+import * as Mixins from '../Mixins'
+import * as t from '../Typography'
+import * as S from '../Strings'
+import Layout, { Content } from '../components/Layout'
+import HireMePopup from '../components/HireMePopup.js'
+import { media } from '../MediaQueries'
+import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 const AboveFold = styled.div`
   ${Mixins.aboveFoldMixin}
@@ -19,7 +20,7 @@ const AboveFold = styled.div`
     line-height: 1.14;
   }
   ${media.tablet`background-position: center top 0px;`};
-`;
+`
 
 const AboutMeWrapper = styled.div`
   ${Mixins.wrapper}
@@ -57,37 +58,37 @@ const AboutMeWrapper = styled.div`
     display: block;
     ${media.tablet`max-width: 70%;`}
   }
-`;
+`
 
 class AboutMe extends React.Component {
   state = {
     openHireMePopup: false
-  };
+  }
 
   handleRequestDemoClose = () => {
     this.setState({
       openHireMePopup: false
-    });
-  };
+    })
+  }
 
   openContactPopup = () => {
     this.setState({
       openHireMePopup: true
-    });
-  };
+    })
+  }
 
   render() {
-    const { openHireMePopup } = this.state;
-    const { data } = this.props;
+    const { openHireMePopup } = this.state
+    const { data } = this.props
     return (
       <AboutMeWrapper>
         <Layout theme="white" openContactPopup={this.openContactPopup}>
           <AboveFold>
             <t.H1 green align="center">
-              Name Surname - Lorem ipsum
+              {S.FULL_NAME}
             </t.H1>
             <t.LargeP align="center" max70>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              {S.LONG_BIO}
             </t.LargeP>
           </AboveFold>
           <Content>
@@ -96,11 +97,11 @@ class AboutMe extends React.Component {
         </Layout>
         <HireMePopup open={openHireMePopup} handleClose={this.handleRequestDemoClose} />
       </AboutMeWrapper>
-    );
+    )
   }
 }
 
-export default AboutMe;
+export default AboutMe
 
 export const pageQuery = graphql`
   query {
@@ -108,4 +109,4 @@ export const pageQuery = graphql`
       ...fluidImage
     }
   }
-`;
+`

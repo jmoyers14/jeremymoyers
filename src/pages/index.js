@@ -174,8 +174,8 @@ class Homepage extends React.Component {
               </DivWrapper>
               <DivWrapper>
                 <t.H2 bold>{S.TRACE_TITLE}</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
+                <t.P>{S.TRACE_TECHNOLOGY}</t.P>
+                <t.P>{S.TRACE_DESCRIPTION}</t.P>
                 <LinkButton primary bold className="link" as="a"
                   target="_blank"
                   href="#">
