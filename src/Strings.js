@@ -17,14 +17,14 @@ export const PORTFOLIO_LABEL = 'Portfolio'
  */
 
 // Viasat
-export const VIASAT_TITLE = 'Viasat'
-export const VIASAT_TECHNOLOGY = 'React Native'
-export const VIASAT_DESCRIPTION = 'A tablet and phone application enabling flight crew members to troubleshoot outages in Viasats inflight networks. Critical features include: Dynamically determining the aircraft’s network architecture. Identify unresponsive network components. Providing instructions to the crew to resolve the outage.'
+export const VIASAT_TITLE = 'Viasat Crew Central'
+export const VIASAT_TECHNOLOGY = 'React Native : Express JS'
+export const VIASAT_DESCRIPTION = 'A tablet and phone application designed to help flight crews troubleshoot outages in Viasat’s inflight networks. Critical features include: Dynamically determining the aircraft’s network architecture. Identifying unresponsive network components. Providing instructions to resolve the outage.'
 
 // M-Mama
 export const MAMA_TITLE = 'M-Mama'
 export const MAMA_TECHNOLOGY = 'Android Kotlin : Java Springboot : Symmetric DS'
-export const MAMA_DESCRIPTION = 'An emergency response system used in dispatch centers to coordinate the transportation of pregnant mothers from remote villages to hospitals in Lesotho Africa. Critical features include: Database replication to ensure full offline functionality during frequent network outages. Estimate distances between villages and hospitals to compensate the drivers. Fully localized for English and Sotho languages. Integration with the M-Pesa payment system.'
+export const MAMA_DESCRIPTION = 'An emergency response system for the country of Lesotho to use in dispatch centers to coordinate the transportation of pregnant mothers from remote villages to hospitals. Critical features include: Database replication to ensure full offline functionality during frequent network outages. Estimate distances between villages and hospitals to compensate drivers. Fully localized for English and Sotho languages. Integration with the M-Pesa payment system.'
 
 // Specialty Produce
 export const SP_TITLE = 'Specialty Produce'
