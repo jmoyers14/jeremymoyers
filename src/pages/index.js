@@ -7,6 +7,8 @@ import Trace from '../images/Trace.jpg'
 import Avagen from '../images/Avagen.jpg'
 import Bump from '../images/Bump.jpg'
 import Buffini from '../images/Buffini.jpg'
+import Mama from '../images/Mama.jpg'
+import Viasat from '../images/Viasat.jpg'
 import { HireMe, LinkButton } from '../components/Button.js'
 import HireMePopup from '../components/HireMePopup.js'
 import { media } from '../MediaQueries'
@@ -168,6 +170,30 @@ class Homepage extends React.Component {
               {S.PORTFOLIO_LABEL}
             </t.H2>
           </Content>
+          <Block>
+            <BlockContent>
+              <DivWrapper>
+                <ItemImage src={Viasat} alt="Trace Title" />
+              </DivWrapper>
+              <DivWrapper>
+                <t.H2 bold>{S.VIASAT_TITLE}</t.H2>
+                <t.P>{S.VIASAT_TECHNOLOGY}</t.P>
+                <t.P>{S.VIASAT_DESCRIPTION}</t.P>
+              </DivWrapper>
+            </BlockContent>
+          </Block>
+          <Block>
+            <BlockContent>
+              <DivWrapper>
+                <t.H2 bold>{S.MAMA_TITLE}</t.H2>
+                <t.P>{S.MAMA_TECHNOLOGY}</t.P>
+                <t.P>{S.MAMA_DESCRIPTION}</t.P>
+              </DivWrapper>
+              <DivWrapper>
+                <ItemImage src={Mama} alt="SpecialtyProduce title" />
+              </DivWrapper>
+            </BlockContent>
+          </Block>
           <Block>
             <BlockContent>
               <DivWrapper>
